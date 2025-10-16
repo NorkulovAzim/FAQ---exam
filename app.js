@@ -1,4 +1,4 @@
-const API_URL = "https://crud-nodejs-ixa1.onrender.com/api/posts";
+const API_URL = "https://faq-crud.onrender.com/api/faqs";
 
 const addBtn = document.getElementById("add-btn");
 const modal = document.getElementById("modal");
@@ -10,7 +10,6 @@ const answerInput = document.getElementById("answer-input");
 
 let editingId = null;
 
-// Load all posts
 async function loadFAQs() {
   faqList.innerHTML = "<p>Loading...</p>";
   try {
