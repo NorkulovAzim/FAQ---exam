@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reddit</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="shortcut icon" href="./reddit.png" type="image/x-icon" />
-  </head>
 
-  <body>
-    <section>
-      <button id="theme-toggle" class="theme-btn">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-      <h2 class="title">
-        Reddit <img class="reddit" src="./reddit.png" alt="" />
-      </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddit</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="icon" type="image/x-icon" href="./reddit.png">
+</head>
 
-      <div id="faq-list">
-        <!-- list -->
-        <!-- <div class="question">
+<body>
+  <section>
+    <button id="theme-toggle" class="theme-btn">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <h2 class="title">
+      Reddit <img class="reddit" src="./reddit.png" alt="" />
+    </h2>
+
+    <div id="faq-list">
+      <!-- list -->
+      <!-- <div class="question">
           <h3>${questionText}</h3>
           <i class="fa-solid fa-arrow-down"></i>
         </div>
@@ -38,11 +36,11 @@
             </button>
           </div>
         </div> -->
-        <!-- list -->
+      <!-- list -->
 
-        <!-- edit -->
+      <!-- edit -->
 
-        <!-- <div class="question">
+      <!-- <div class="question">
           <h3>${questionText}</h3>
           <i class="fa-solid fa-arrow-down"></i>
         </div>
@@ -58,50 +56,44 @@
           </div>
         </div> -->
 
-        <!-- edit -->
-      </div>
-
-      <div class="add-wrap">
-        <button class="add-btn" id="add-btn">Add your question</button>
-      </div>
-    </section>
-
-    <div class="modal" id="modal">
-      <div class="modal-content">
-        <h3>Add Your Question <i class="fa-regular fa-comment"></i></h3>
-        <label>Question:</label>
-        <input
-          type="text"
-          id="question-input"
-          placeholder="Enter your question"
-        />
-        <label>Answer:</label>
-        <textarea
-          id="answer-input"
-          rows="3"
-          placeholder="Enter the answer"
-        ></textarea>
-        <div class="modal-buttons">
-          <button id="save-btn">Confirm</button>
-          <button id="cancel-btn">Cancel</button>
-        </div>
-      </div>
+      <!-- edit -->
     </div>
 
-    <script>
-      const themeBtn = document.getElementById("theme-toggle");
+    <div class="add-wrap">
+      <button class="add-btn" id="add-btn">Add your question</button>
+    </div>
+  </section>
 
-      themeBtn.addEventListener("click", function () {
-        document.body.classList.toggle("light-mode");
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3>Add Your Question <i class="fa-regular fa-comment"></i></h3>
+      <label>Question:</label>
+      <input type="text" id="question-input" placeholder="Enter your question" />
+      <label>Answer:</label>
+      <textarea id="answer-input" rows="3" placeholder="Enter the answer"></textarea>
+      <div class="modal-buttons">
+        <button id="save-btn">Confirm</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
 
-        if (document.body.classList.contains("light-mode")) {
-          themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        } else {
-          themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        }
-      });
-    </script>
+  <script>
+    const themeBtn = document.getElementById("theme-toggle");
 
-    <script src="./app.js"></script>
-  </body>
+    themeBtn.addEventListener("click", function () {
+      document.body.classList.toggle("light-mode");
+
+      if (document.body.classList.contains("light-mode")) {
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+      } else {
+        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+      }
+    });
+  </script>
+
+  <!-- <script src="./app.js"></script> -->
+  <script src="./script.js"></script>
+</body>
+
 </html>

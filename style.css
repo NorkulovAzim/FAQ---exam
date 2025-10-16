@@ -110,7 +110,7 @@ section {
 }
 
 .add-btn:hover {
-  background: #c39163;
+  background: #fba454;
 }
 
 .modal {
@@ -178,4 +178,12 @@ section {
   width: 40px;
   height: 40px;
   margin-top: 20px;
+}
+
+.faq .question {
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq.active .question i {
+  transform: rotate(180deg);
 }
