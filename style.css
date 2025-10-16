@@ -107,11 +107,13 @@ section {
   border-radius: 18px;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 15px;
+  transition: all linear 0.3s;
 }
 
 .add-btn:hover {
   background: #555879;
+  transform: scale(1.05);
 }
 
 .modal {
@@ -182,7 +184,7 @@ section {
 }
 
 .faq .question {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.8s linear;
 }
 
 .faq.active .question i {
