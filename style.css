@@ -83,7 +83,7 @@ section {
 .delete-btn {
   border: none;
   padding: 6px 14px;
-  border-radius: 6px;
+  border-radius: 15px;
   cursor: pointer;
   color: #fff;
 }
@@ -180,7 +180,7 @@ section {
   border: none;
   color: white;
   padding: 6px 14px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -189,7 +189,7 @@ section {
   border: none;
   color: white;
   padding: 6px 14px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
