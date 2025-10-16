@@ -76,6 +76,7 @@ section {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  justify-content: flex-end;
 }
 
 .edit-btn,
@@ -91,8 +92,24 @@ section {
   background: #4caf50;
 }
 
+.edit-btn i {
+  transition: all linear 0.3s;
+}
+
+.edit-btn i:hover {
+  transform: scaleX(90%);
+}
+
 .delete-btn {
   background: #e53935;
+}
+
+.delete-btn i {
+  transition: all linear 0.3s;
+}
+
+.delete-btn i:hover {
+  transform: rotate(360deg);
 }
 
 .add-wrap {
@@ -181,10 +198,14 @@ section {
   width: 40px;
   height: 40px;
   margin-top: 20px;
+  transition: all linear 0.3s;
+  animation-name: anime;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .faq .question {
-  transition: transform 0.8s linear;
+  transition: transform 0.4s ease-in-out;
 }
 
 .faq.active .question i {
