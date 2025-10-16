@@ -62,11 +62,11 @@ async function createFAQ(question, answer) {
       return result.data;
     } else {
       console.error(result);
-      alert("Add failed: " + JSON.stringify(result));
+      alert("Error: " + JSON.stringify(result));
     }
   } catch (err) {
     console.error(err);
-    alert("Add failed: " + err.message);
+    alert("Error: " + err.message);
   }
 }
 
@@ -87,11 +87,11 @@ async function updateFAQ(id, question, answer) {
       return result.data;
     } else {
       console.error(result);
-      alert("Update failed: " + JSON.stringify(result));
+      alert("Error: " + JSON.stringify(result));
     }
   } catch (err) {
     console.error(err);
-    alert("Update failed: " + err.message);
+    alert("Error: " + err.message);
   }
 }
 
@@ -100,7 +100,7 @@ async function deleteFAQ(id) {
     await fetch(`${API_URL}/${id}`, { method: "DELETE" });
   } catch (err) {
     console.error(err);
-    alert("Delete failed");
+    alert("Error");
   }
 }
 faqList.addEventListener("click", async (e) => {
